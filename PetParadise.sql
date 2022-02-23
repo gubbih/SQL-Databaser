@@ -11,7 +11,7 @@ CREATE TABLE Pet (
     PetType varchar(255),
     PetBreed varchar(255),
 	PetWeight FLOAT,
-	PetDOB datetime2,
+	PetDOB date,
 	FK_OwnerID int,
 	FOREIGN KEY (FK_OwnerID) REFERENCES Owner(OwnerID)
 );
